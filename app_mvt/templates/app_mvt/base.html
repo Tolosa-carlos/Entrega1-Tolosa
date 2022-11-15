@@ -10,7 +10,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Crispy Kitchen - Bootstrap 5 HTML Template</title>
+        <title>Proyecto final Coder - Tolosa</title>
 
         <!-- CSS FILES -->    
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,19 +52,15 @@ https://www.tooplate.com/view/2129-crispy-kitchen
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="index.html">Home</a>
+                            <a class="nav-link active" href="{% url 'app-inicio' %}">Home</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="">Story</a>
+                            <a class="nav-link" href="{% url 'app-story' %}">Story</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="">Menu</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="">Our Updates</a>
+                            <a class="nav-link" href="{% url 'app-menu' %}">Menu</a>
                         </li>
 
                         <li class="nav-item">
@@ -73,12 +69,18 @@ https://www.tooplate.com/view/2129-crispy-kitchen
                     </ul>
                 </div>
 
-                <div class="d-none d-lg-block">
-                    <button type="button" class="custom-btn btn btn-danger" data-bs-toggle="modal" data-bs-target="#BookingModal">Reservation</button>
-                </div>
-
             </div>
         </nav>
+
+                <div style="text-align: center; padding: 5%;">
+                        <h1>Generate more leads with a professional landing page!</h1>
+                </div>
+
+
+                {% block buscar %}
+
+                {% endblock %}
+        
 
             <section class="menu section-padding">
                 <div class="container">
@@ -101,19 +103,6 @@ https://www.tooplate.com/view/2129-crispy-kitchen
 
                                     <span class="price-tag bg-white shadow-lg ms-4"><small>$</small>12.50</span>
 
-                                    <div class="d-flex flex-wrap align-items-center w-100 mt-2">
-                                        <h6 class="reviews-text mb-0 me-3">4.3/5</h6>
-
-                                        <div class="reviews-stars">
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star reviews-icon"></i>
-                                        </div>
-
-                                        <p class="reviews-text mb-0 ms-4">102 Reviews</p>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -121,7 +110,7 @@ https://www.tooplate.com/view/2129-crispy-kitchen
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="menu-thumb">
                                 <div class="menu-image-wrap">
-                                    <img src="images/lunch/farhad-ibrahimzade-MGKqxm6u2bc-unsplash.jpg" class="img-fluid menu-image" alt="">
+                                    <img src="{% static 'app_mvt/assets/images/lunch/farhad-ibrahimzade-MGKqxm6u2bc-unsplash.jpg' %}" class="img-fluid menu-image" alt="">
 
                                     <span class="menu-tag bg-warning">Lunch</span>
                                 </div>
@@ -131,19 +120,6 @@ https://www.tooplate.com/view/2129-crispy-kitchen
 
                                     <span class="price-tag bg-white shadow-lg ms-4"><small>$</small>24.50</span>
 
-                                    <div class="d-flex flex-wrap align-items-center w-100 mt-2">
-                                        <h6 class="reviews-text mb-0 me-3">3/5</h6>
-
-                                        <div class="reviews-stars">
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star reviews-icon"></i>
-                                            <i class="bi-star reviews-icon"></i>
-                                        </div>
-
-                                        <p class="reviews-text mb-0 ms-4">50 Reviews</p>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -151,7 +127,7 @@ https://www.tooplate.com/view/2129-crispy-kitchen
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="menu-thumb">
                                 <div class="menu-image-wrap">
-                                    <img src="images/dinner/keriliwi-c3mFafsFz2w-unsplash.jpg" class="img-fluid menu-image" alt="">
+                                    <img src="{% static 'app_mvt/assets/images/dinner/keriliwi-c3mFafsFz2w-unsplash.jpg' %}" class="img-fluid menu-image" alt="">
 
                                     <span class="menu-tag bg-warning">Dinner</span>
                                 </div>
@@ -161,21 +137,6 @@ https://www.tooplate.com/view/2129-crispy-kitchen
 
                                     <span class="price-tag bg-white shadow-lg ms-4"><small>$</small>45</span>
 
-                                    <del class="ms-4"><small>$</small>150</del>
-
-                                    <div class="d-flex flex-wrap align-items-center w-100 mt-2">
-                                        <h6 class="reviews-text mb-0 me-3">3/5</h6>
-
-                                        <div class="reviews-stars">
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star reviews-icon"></i>
-                                            <i class="bi-star reviews-icon"></i>
-                                        </div>
-
-                                        <p class="reviews-text mb-0 ms-4">86 Reviews</p>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -183,7 +144,7 @@ https://www.tooplate.com/view/2129-crispy-kitchen
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="menu-thumb">
                                 <div class="menu-image-wrap">
-                                    <img src="images/dinner/farhad-ibrahimzade-ZipYER3NLhY-unsplash.jpg" class="img-fluid menu-image" alt="">
+                                    <img src="{% static 'app_mvt/assets/images/dinner/farhad-ibrahimzade-ZipYER3NLhY-unsplash.jpg' %}" class="img-fluid menu-image" alt="">
 
                                     <span class="menu-tag bg-warning">Dinner</span>
                                 </div>
@@ -193,21 +154,6 @@ https://www.tooplate.com/view/2129-crispy-kitchen
 
                                     <span class="price-tag bg-white shadow-lg ms-4"><small>$</small>86</span>
 
-                                    <del class="ms-4"><small>$</small>124</del>
-
-                                    <div class="d-flex flex-wrap align-items-center w-100 mt-2">
-                                        <h6 class="reviews-text mb-0 me-3">3/5</h6>
-
-                                        <div class="reviews-stars">
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star reviews-icon"></i>
-                                            <i class="bi-star reviews-icon"></i>
-                                        </div>
-
-                                        <p class="reviews-text mb-0 ms-4">44 Reviews</p>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -215,7 +161,7 @@ https://www.tooplate.com/view/2129-crispy-kitchen
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="menu-thumb">
                                 <div class="menu-image-wrap">
-                                    <img src="images/breakfast/louis-hansel-dphM2U1xq0U-unsplash.jpg" class="img-fluid menu-image" alt="">
+                                    <img src="{% static 'app_mvt/assets/images/breakfast/louis-hansel-dphM2U1xq0U-unsplash.jpg' %}" class="img-fluid menu-image" alt="">
 
                                     <span class="menu-tag bg-warning">Breakfast</span>
                                 </div>
@@ -225,19 +171,6 @@ https://www.tooplate.com/view/2129-crispy-kitchen
 
                                     <span class="price-tag bg-white shadow-lg ms-4"><small>$</small>20.50</span>
 
-                                    <div class="d-flex flex-wrap align-items-center w-100 mt-2">
-                                        <h6 class="reviews-text mb-0 me-3">4.3/5</h6>
-
-                                        <div class="reviews-stars">
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star reviews-icon"></i>
-                                        </div>
-
-                                        <p class="reviews-text mb-0 ms-4">102 Reviews</p>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -245,7 +178,7 @@ https://www.tooplate.com/view/2129-crispy-kitchen
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="menu-thumb">
                                 <div class="menu-image-wrap">
-                                    <img src="images/lunch/farhad-ibrahimzade-D5c9ZciQy_I-unsplash.jpg" class="img-fluid menu-image" alt="">
+                                    <img src="{% static 'app_mvt/assets/images/lunch/farhad-ibrahimzade-D5c9ZciQy_I-unsplash.jpg' %}" class="img-fluid menu-image" alt="">
 
                                     <span class="menu-tag bg-warning">Lunch</span>
                                 </div>
@@ -255,23 +188,9 @@ https://www.tooplate.com/view/2129-crispy-kitchen
 
                                     <span class="price-tag bg-white shadow-lg ms-4"><small>$</small>34.20</span>
 
-                                    <div class="d-flex flex-wrap align-items-center w-100 mt-2">
-                                        <h6 class="reviews-text mb-0 me-3">3/5</h6>
-
-                                        <div class="reviews-stars">
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star reviews-icon"></i>
-                                            <i class="bi-star reviews-icon"></i>
-                                        </div>
-
-                                        <p class="reviews-text mb-0 ms-4">64 Reviews</p>
-                                    </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </section>
@@ -320,7 +239,7 @@ https://www.tooplate.com/view/2129-crispy-kitchen
                             <li><a href="#" class="social-icon-link bi-youtube"></a></li>
                         </ul>
                     
-                        <p class="copyright-text tooplate-mt60">Copyright © 2022 Crispy Kitchen Co., Ltd.
+                        <p class="copyright-text tooplate-mt60">Copyright © 2022 Carlos Tolosa.
                         <br>Design: <a rel="nofollow" href="https://www.tooplate.com/" target="_blank">Tooplate</a></p>
                         
                     </div>
@@ -408,9 +327,9 @@ https://www.tooplate.com/view/2129-crispy-kitchen
         </div>
 
         <!-- JAVASCRIPT FILES -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/custom.js"></script>
+        <script src="{% static 'app_mvt/js/jquery.min.js' %}"></script>
+        <script src="{% static 'app_mvt/js/bootstrap.bundle.min.js' %}"></script>
+        <script src="{% static 'app_mvt/js/custom.js' %}"></script>
 
     </body>
 </html>

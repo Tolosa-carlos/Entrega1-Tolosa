@@ -1,0 +1,20 @@
+{% extends "app_mvt/base.html" %}
+
+{% block buscar %}
+
+
+<form action="{% url 'app-crear-menu' %}" method="post">
+
+    {% csrf_token %}
+
+    {{ formulario.as_p }}
+
+    <input type="submit" value="Cargar profesor">
+
+
+</form>
+
+
+
+
+{% endblock %}

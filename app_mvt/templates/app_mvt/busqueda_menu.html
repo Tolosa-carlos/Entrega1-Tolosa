@@ -1,0 +1,14 @@
+{% extends  "app_mvt/base.html" %}
+
+{% block buscar %}
+
+<form action="{% url 'app-menu-buscar' %}" method="get">
+
+    <p>
+        Nombre del menu: <input type="text" name="nombre_curso">
+        <input type="submit" value="Buscar">
+    </p>
+
+</form>
+
+{% endblock %}
