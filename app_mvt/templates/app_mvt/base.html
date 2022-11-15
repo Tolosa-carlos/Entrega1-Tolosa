@@ -52,19 +52,19 @@ https://www.tooplate.com/view/2129-crispy-kitchen
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="{% url 'app-inicio' %}">Home</a>
+                            <a class="nav-link active" href="{% url 'app-inicio' %}">Inicio</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'app-story' %}">Story</a>
+                            <a class="nav-link" href="{% url 'app-empleados-buscar' %}">Empleados</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'app-menu' %}">Menu</a>
+                            <a class="nav-link" href="{% url 'app-menu-buscar' %}">Menu</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="">Contact</a>
+                            <a class="nav-link" href="">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -73,129 +73,8 @@ https://www.tooplate.com/view/2129-crispy-kitchen
         </nav>
 
                 <div style="text-align: center; padding: 5%;">
-                        <h1>Generate more leads with a professional landing page!</h1>
+                        <h3> {% block buscar %}    {% endblock %} </h3>
                 </div>
-
-
-                {% block buscar %}
-
-                {% endblock %}
-        
-
-            <section class="menu section-padding">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-12">
-                            <h2 class="text-center mb-lg-5 mb-4">Special Menus</h2>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-thumb">
-                                <div class="menu-image-wrap">
-                                    <img src="{% static 'app_mvt/assets/images/breakfast/brett-jordan-8xt8-HIFqc8-unsplash.jpg' %}" class="img-fluid menu-image" alt="">
-
-                                    <span class="menu-tag bg-warning">Breakfast</span>
-                                </div>
-
-                                <div class="menu-info d-flex flex-wrap align-items-center">
-                                    <h4 class="mb-0">Morning Fresh</h4>
-
-                                    <span class="price-tag bg-white shadow-lg ms-4"><small>$</small>12.50</span>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-thumb">
-                                <div class="menu-image-wrap">
-                                    <img src="{% static 'app_mvt/assets/images/lunch/farhad-ibrahimzade-MGKqxm6u2bc-unsplash.jpg' %}" class="img-fluid menu-image" alt="">
-
-                                    <span class="menu-tag bg-warning">Lunch</span>
-                                </div>
-
-                                <div class="menu-info d-flex flex-wrap align-items-center">
-                                    <h4 class="mb-0">Tooplate Soup</h4>
-
-                                    <span class="price-tag bg-white shadow-lg ms-4"><small>$</small>24.50</span>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-thumb">
-                                <div class="menu-image-wrap">
-                                    <img src="{% static 'app_mvt/assets/images/dinner/keriliwi-c3mFafsFz2w-unsplash.jpg' %}" class="img-fluid menu-image" alt="">
-
-                                    <span class="menu-tag bg-warning">Dinner</span>
-                                </div>
-
-                                <div class="menu-info d-flex flex-wrap align-items-center">
-                                    <h4 class="mb-0">Premium Steak</h4>
-
-                                    <span class="price-tag bg-white shadow-lg ms-4"><small>$</small>45</span>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-thumb">
-                                <div class="menu-image-wrap">
-                                    <img src="{% static 'app_mvt/assets/images/dinner/farhad-ibrahimzade-ZipYER3NLhY-unsplash.jpg' %}" class="img-fluid menu-image" alt="">
-
-                                    <span class="menu-tag bg-warning">Dinner</span>
-                                </div>
-
-                                <div class="menu-info d-flex flex-wrap align-items-center">
-                                    <h4 class="mb-0">Seafood Set</h4>
-
-                                    <span class="price-tag bg-white shadow-lg ms-4"><small>$</small>86</span>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-thumb">
-                                <div class="menu-image-wrap">
-                                    <img src="{% static 'app_mvt/assets/images/breakfast/louis-hansel-dphM2U1xq0U-unsplash.jpg' %}" class="img-fluid menu-image" alt="">
-
-                                    <span class="menu-tag bg-warning">Breakfast</span>
-                                </div>
-
-                                <div class="menu-info d-flex flex-wrap align-items-center">
-                                    <h4 class="mb-0">Burger Set</h4>
-
-                                    <span class="price-tag bg-white shadow-lg ms-4"><small>$</small>20.50</span>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-thumb">
-                                <div class="menu-image-wrap">
-                                    <img src="{% static 'app_mvt/assets/images/lunch/farhad-ibrahimzade-D5c9ZciQy_I-unsplash.jpg' %}" class="img-fluid menu-image" alt="">
-
-                                    <span class="menu-tag bg-warning">Lunch</span>
-                                </div>
-
-                                <div class="menu-info d-flex flex-wrap align-items-center">
-                                    <h4 class="mb-0">Healthy Soup</h4>
-
-                                    <span class="price-tag bg-white shadow-lg ms-4"><small>$</small>34.20</span>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="BgImage"></section>
 
         <footer class="site-footer section-padding">
             
@@ -227,17 +106,6 @@ https://www.tooplate.com/view/2129-crispy-kitchen
 
                     <div class="col-lg-4 col-md-6 col-xs-12 tooplate-mt30">
                         <h6 class="text-white mb-lg-4 mb-3">Social</h6>
-
-                        <ul class="social-icon">
-                            <li><a href="#" class="social-icon-link bi-facebook"></a></li>
-
-                            <li><a href="#" class="social-icon-link bi-instagram"></a></li>
-
-                            <li><a href="https://twitter.com/search?q=tooplate.com&src=typed_query&f=live" target="_blank"
-                            	 class="social-icon-link bi-twitter"></a></li>
-
-                            <li><a href="#" class="social-icon-link bi-youtube"></a></li>
-                        </ul>
                     
                         <p class="copyright-text tooplate-mt60">Copyright © 2022 Carlos Tolosa.
                         <br>Design: <a rel="nofollow" href="https://www.tooplate.com/" target="_blank">Tooplate</a></p>

@@ -1,0 +1,14 @@
+{% extends  "app_mvt/base.html" %}
+
+{% block buscar %}
+
+<form action="{% url 'app-empleados-buscar-resultados' %}" method="get">
+
+    <p>
+        Nombre del empleado: <input type="text" name="nombre_empleado">
+        <input type="submit" value="Buscar">
+    </p>
+
+</form>
+
+{% endblock %}

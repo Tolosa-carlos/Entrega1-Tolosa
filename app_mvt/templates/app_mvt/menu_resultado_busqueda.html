@@ -1,0 +1,11 @@
+{% extends  "app_mvt/base.html" %}
+
+{% block buscar %}
+
+<ul>
+    {% for lista in menu %}
+    <li> {{lista.nombre}} - {{lista.precio}} </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

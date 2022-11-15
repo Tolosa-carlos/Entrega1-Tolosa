@@ -1,0 +1,15 @@
+{% extends  "app_mvt/base.html" %}
+
+{% block buscar %}
+
+<ul>
+
+    {% for nombre in empleado %}
+
+    <li> {{nombre.nombre}} {{nombre.apellido}} - {{nombre.edad}} </li>
+
+    {% endfor %}
+
+</ul>
+
+{% endblock %}

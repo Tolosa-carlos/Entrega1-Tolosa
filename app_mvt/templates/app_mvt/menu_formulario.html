@@ -6,10 +6,12 @@
 <form action="{% url 'app-crear-menu' %}" method="post">
 
     {% csrf_token %}
+    <p>
+        Nombre: <input type="text" name="nombre">
 
-    {{ formulario.as_p }}
-
-    <input type="submit" value="Cargar profesor">
+        Precio: <input type="number" name="precio">
+    </p>
+    <input type="submit" value="Crear">
 
 
 </form>

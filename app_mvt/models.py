@@ -5,7 +5,6 @@ from django.db import models
 class Menu(models.Model):
 
     nombre = models.CharField(max_length=50)
-    clase_comida = models.CharField(max_length=50) # Ej: Desayuno o almuerzo
     precio = models.IntegerField()
 
 class Empleados(models.Model):
@@ -15,7 +14,4 @@ class Empleados(models.Model):
     edad = models.IntegerField()
 
 
-class modelo3(models.Model):
-
-    pass
 
