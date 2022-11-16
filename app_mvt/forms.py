@@ -12,3 +12,9 @@ class EmpleadosForm(forms.Form):
     apellido = forms.CharField()
     edad = forms.IntegerField()
 
+class ServiciosForm(forms.Form):
+
+    clase = forms.CharField()
+    dia = forms.CharField()
+    horario = forms.IntegerField()
+

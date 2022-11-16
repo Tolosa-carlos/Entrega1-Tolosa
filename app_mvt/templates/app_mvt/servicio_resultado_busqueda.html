@@ -1,0 +1,14 @@
+{% extends  "app_mvt/base.html" %}
+
+{% block buscar %}
+
+<ul>
+
+    {% for lista in servicio %}
+
+    <li> {{lista.clase}} - {{lista.dia}} a partir de las {{lista.horario}} Hs.</li>
+    
+    {% endfor %}
+</ul>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "app_mvt/base.html" %}
+
+{% block buscar %}
+
+
+<form action="{% url 'app-nuevo-servicio' %}" method="post">
+
+    {% csrf_token %}
+
+    {{ formulario.as_p }}
+
+    <input type="submit" value="Agregar servicio">
+
+
+</form>
+
+{% endblock %}

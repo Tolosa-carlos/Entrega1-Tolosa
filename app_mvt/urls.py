@@ -11,7 +11,8 @@ urlpatterns = [
     path("empleados/buscar/", busqueda_empleados, name="app-empleados-buscar"),
     path("empleados/buscar/resultados", resultado_busqueda_empleados, name="app-empleados-buscar-resultados"),
     path("empleados/cargar/", nuevo_empleado, name="app-nuevos-empleados"),
-
-
-
+    path("servicios/", servicios, name="app-servicios"),
+    path("servicios/buscar/", busqueda_servicios, name="app-servicios-buscar"),
+    path("servicios/buscar/resultados/", resultado_busqueda_servicios, name="app-servicios-buscar-resultados"),
+    path("servicios/crear/", nuevo_servicio, name="app-nuevo-servicio"),
 ]

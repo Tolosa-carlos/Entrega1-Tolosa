@@ -13,5 +13,9 @@ class Empleados(models.Model):
     apellido = models.CharField(max_length=50)
     edad = models.IntegerField()
 
+class Servicios(models.Model):
 
+    clase = models.CharField(max_length=50)
+    dia = models.CharField(max_length=50)
+    horario = models.IntegerField()
 

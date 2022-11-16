@@ -1,0 +1,14 @@
+{% extends  "app_mvt/base.html" %}
+
+{% block buscar %}
+
+<form action="{% url 'app-servicios-buscar-resultados' %}" method="get">
+
+    <p>
+        Servicio: <input type="text" name="nombre_servicio">
+        <input type="submit" value="Buscar servicio">
+    </p>
+
+</form>
+
+{% endblock %}
